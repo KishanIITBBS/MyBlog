@@ -51,7 +51,7 @@
 - Clone repository by running this command on git-bash
 
 ```
-    git clone https://github.com/<your user-name>/POST-O-BLOG.git
+    git clone https://github.com/<your user-name>/BlogApp.git
 ```
 
 - Install Dependencies using
