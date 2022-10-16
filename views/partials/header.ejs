@@ -21,12 +21,15 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&family=Red+Hat+Display&family=Signika+Negative&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
 
     <script
       src="https://kit.fontawesome.com/15e4344681.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="/css/styles.css" />
     <title>My-Blog</title>
   </head>
@@ -40,11 +43,13 @@
             class="navbar-toggle"
             data-toggle="collapse"
             data-target="#myNavbar"
+            aria-controls="myNavbar"
           >
             <span class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
           <a id="logo" class="navbar-brand" href="/">My-Blog</a>
         </div>
+
         <div class="collapse navbar-collapse" id="myNavbar">
           <% if (authenticated) { %>
           <ul id="link" class="nav navbar-nav navbar-right">
@@ -68,13 +73,8 @@
           <% } else { %>
           <ul id="link" class="nav navbar-nav navbar-right">
             <li class="link1"><a href="/">Home</a></li>
-            <!-- <li class="link1">
-                  <a href="/about">About</a>
-                </li>
-                <li class="link1">
-                  <a href="/contact">Contact</a>
-                </li> -->
-            <li class="nav-item link1 "><a href="/signin"> Sign In </a></li>
+
+            <li class="nav-item link1"><a href="/signin"> Sign In </a></li>
             <li class="nav-item" id="button-link">
               <div id="compose"><a href="/signup"> Sign Up </a></div>
             </li>

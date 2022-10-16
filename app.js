@@ -260,6 +260,7 @@ app.post('/compose', (req, res) => {
         title: req.body.postTitle,
         content: req.body.postBody,
         markdown: req.body.postMarkdown,
+        // postImage: req.body.postImage,
         account: foundUser.userHandle,
         email: foundUser.username,
         authorId: req.user.id,
@@ -284,7 +285,7 @@ app.get('/profile', (req, res) => {
     User.findById(req.user.id, (err, foundUser) => {
       if (err) {
         console.log(err)
-        res.send('Please log in to see your profile.')
+        res.send('Please sign in to see your profile.')
       } else {
         if (foundUser) {
           profile_name = foundUser.userHandle

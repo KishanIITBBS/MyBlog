@@ -13,7 +13,6 @@ body {
 }
 
 .home-body-bg {
-  background: url("./images/background2.png");
   background-repeat: no-repeat;
   background-size: 900px;
   background-attachment: fixed;
@@ -280,15 +279,16 @@ label {
   margin-top: 2%;
 }
 
-@media (max-height: 600px) {
+@media (max-width: 725px) {
   .home-body-bg {
-    background-size: 400px;
+    background-size: 800px;
+    min-width: 300px;
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 640px) {
   .home-body-bg {
-    background-size: 400px;
+    background-size: 500px;
   }
 }
 
@@ -320,6 +320,7 @@ label {
     border: 2px solid transparent;
   }
 }
+
 
 @media (max-width:408px){
   #postoblog{
